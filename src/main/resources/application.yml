@@ -1,0 +1,38 @@
+logging:
+  level:
+    org.org.springframework: trace
+    net.wickedcorp: trace
+notification:
+  subscriptions:
+    - recipients:
+        - roman.wiget@gmail.com
+      cases:
+        - IOE0923802370
+        - IOE0923802371
+        - IOE0923802372
+        - IOE0923802373
+environment:
+  uscis:
+    host: https://egov.uscis.gov
+spring:
+  datasource:
+    url: jdbc:sqlite:cases.db
+    driver-class-name: org.sqlite.JDBC
+  jpa:
+    hibernate:
+      ddl-auto: update
+  mail:
+    host: smtp
+    port: 25
+    username: service-notifications@email.com
+    password: 'password'
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+
+
+

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Notification</title>
+</head>
+<body>
+The status for receipt number <b><span th:text="${receiptNumber}"></span></b> has changed to:
+<p><b><span th:text="${status}"></span></b></p>
+<p><span th:utext="${actionDescription}"></span></p>
+</body>
+</html>
