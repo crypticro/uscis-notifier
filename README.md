@@ -1,6 +1,6 @@
 # uscis-notifier
 ## Description
-This application checks the USCIS (U.S. Citizenship and Immigration Services) Case Status Check API hourly and if there's a change sends an email about case status change.
+This application checks the USCIS (U.S. Citizenship and Immigration Services) Case Status Check API hourly and if there's a change sends an email about case status changes.
 I created this application to reduce my personal anxieties and check the case status multiple times per day as USCIS does not provide reliable updates on cases.
 
 Email implementation is tested with Gmail, but any other SMTP Email service should work
